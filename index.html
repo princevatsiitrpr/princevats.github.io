@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Vats — Researcher | Air Quality & AI/ML</title>
+  <meta name="description" content="Prince Vats — PhD Researcher at IIT Gandhinagar specializing in air pollution monitoring, low-cost IoT sensor networks, AI/ML calibration, and deep-learning based spatio-temporal modelling." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Aerosol particle canvas -->
+<canvas id="particleCanvas"></canvas>
+
+<!-- ===== Navigation ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">PV</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="section-container">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="dot"></span> Open to Collaborations</div>
+        <h1 class="hero-name">Prince <span class="gradient">Vats</span></h1>
+        <p class="hero-title">PhD Researcher — Environmental Engineering</p>
+        <p class="hero-affiliation">Indian Institute of Technology Gandhinagar</p>
+        <div class="hero-buttons">
+          <a href="#research" class="btn btn-primary">Explore Research ↓</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <!-- Social links -->
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/prince-vats-iitrpr/" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://scholar.google.com/" target="_blank" rel="noopener" class="social-link" title="Google Scholar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-frame">
+          <img src="profile.jpg" alt="Prince Vats" class="hero-image" />
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
+          <div class="floating-particle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about">
+  <div class="section-container reveal">
+    <span class="section-label">About Me</span>
+    <h2 class="section-title">Bridging Sensors, Data & Clean Air</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I am a PhD researcher at the <strong>Indian Institute of Technology Gandhinagar</strong>,
+          working at the intersection of environmental monitoring, Internet-of-Things (IoT), and artificial intelligence.
+          My research focuses on designing and deploying <strong>low-cost sensor networks</strong> for ambient
+          air-quality surveillance and leveraging <strong>AI/ML techniques</strong> to calibrate, model, and forecast
+          pollutant concentrations at fine spatio-temporal resolutions.
+        </p>
+        <p>
+          I hold an M.Tech in Environmental Engineering from <strong>IIT Ropar</strong>. My current work spans
+          deep-learning-based spatio-temporal modelling, network-level sensor calibration, and predictive analytics for
+          atmospheric understanding — ultimately aimed at enabling data-driven decisions for public health and
+          environmental policy.
+        </p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">IoT</div>
+          <div class="stat-label">Sensor Networks</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">AI/ML</div>
+          <div class="stat-label">Calibration</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">DL</div>
+          <div class="stat-label">Spatio-Temporal</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">AQ</div>
+          <div class="stat-label">Monitoring</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Education ===== -->
+<section id="education">
+  <div class="section-container reveal">
+    <span class="section-label">Education</span>
+    <h2 class="section-title">Academic Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item active">
+        <div class="timeline-card">
+          <span class="timeline-year">Ongoing</span>
+          <h3 class="timeline-degree">Doctor of Philosophy (PhD)</h3>
+          <p class="timeline-school">Indian Institute of Technology Gandhinagar</p>
+          <p class="timeline-details">
+            Air pollution monitoring &amp; modelling · Low-cost IoT sensor network deployment ·
+            AI/ML-based network calibration · Deep-learning spatio-temporal modelling ·
+            Atmospheric analysis &amp; predictive modelling
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-card">
+          <span class="timeline-year">Completed</span>
+          <h3 class="timeline-degree">Master of Technology (M.Tech)</h3>
+          <p class="timeline-school">Indian Institute of Technology Ropar</p>
+          <p class="timeline-details">Environmental Engineering</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Research ===== -->
+<section id="research">
+  <div class="section-container reveal">
+    <span class="section-label">Research Areas</span>
+    <h2 class="section-title">What I Work On</h2>
+    <div class="research-grid">
+
+      <div class="research-card">
+        <div class="research-icon">🌫️</div>
+        <h3>Air Pollution Monitoring</h3>
+        <p>Real-time ambient air-quality surveillance using ground-based measurement networks to track pollutant dynamics across urban and peri-urban landscapes.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">📡</div>
+        <h3>Low-Cost IoT Sensor Networks</h3>
+        <p>Design, deployment, and evaluation of affordable Internet-of-Things sensor nodes for spatially dense, scalable air-quality monitoring infrastructure.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🤖</div>
+        <h3>AI/ML-Based Calibration</h3>
+        <p>Machine-learning pipelines for field calibration of low-cost sensors against reference-grade instruments, improving measurement accuracy at scale.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🧠</div>
+        <h3>Deep Learning — Spatio-Temporal Modelling</h3>
+        <p>Graph neural networks, ConvLSTMs, and transformer architectures for high-resolution spatio-temporal pollutant concentration estimation and forecasting.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">🌍</div>
+        <h3>Atmospheric Analysis</h3>
+        <p>Data-driven exploration of atmospheric processes including source apportionment, meteorological influence assessment, and emission trend analysis.</p>
+      </div>
+
+      <div class="research-card">
+        <div class="research-icon">📈</div>
+        <h3>Predictive Modelling</h3>
+        <p>Forecasting air quality indices and pollutant concentrations to support early-warning systems, public health advisories, and policy interventions.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section id="skills">
+  <div class="section-container reveal">
+    <span class="section-label">Tools &amp; Skills</span>
+    <h2 class="section-title">Technical Toolkit</h2>
+    <div class="skills-container">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">TensorFlow</span>
+      <span class="skill-tag">PyTorch</span>
+      <span class="skill-tag">Scikit-Learn</span>
+      <span class="skill-tag">Pandas / NumPy</span>
+      <span class="skill-tag">Keras</span>
+      <span class="skill-tag">MATLAB</span>
+      <span class="skill-tag">R</span>
+      <span class="skill-tag">Arduino / ESP32</span>
+      <span class="skill-tag">Raspberry Pi</span>
+      <span class="skill-tag">MQTT / LoRa</span>
+      <span class="skill-tag">GIS / QGIS</span>
+      <span class="skill-tag">Google Earth Engine</span>
+      <span class="skill-tag">SQL</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">LaTeX</span>
+      <span class="skill-tag">Jupyter</span>
+      <span class="skill-tag">Docker</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact">
+  <div class="section-container reveal">
+    <span class="section-label">Contact</span>
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">🏛️</div>
+          <div>
+            <strong>Affiliation</strong><br />
+            Indian Institute of Technology Gandhinagar
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <strong>Email</strong><br />
+            <a href="mailto:prince.vats@iitgn.ac.in">prince.vats@iitgn.ac.in</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Location</strong><br />
+            IIT Gandhinagar, Gujarat, India
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a8a8a8"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <strong>LinkedIn</strong><br />
+            <a href="https://www.linkedin.com/in/prince-vats-iitrpr/" target="_blank" rel="noopener">linkedin.com/in/prince-vats-iitrpr</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#a8a8a8"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+          </div>
+          <div>
+            <strong>Google Scholar</strong><br />
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar Profile</a>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  © 2026 Prince Vats · IIT Gandhinagar · All rights reserved.
+</footer>
+
+<!-- ===== Scripts ===== -->
+<script>
+// ─── Aerosol Particle System ───
+(function () {
+  const canvas = document.getElementById('particleCanvas');
+  const ctx = canvas.getContext('2d');
+  let W, H;
+  const particles = [];
+  const PARTICLE_COUNT = 160;
+  const LIGHT_SOURCES = [
+    { x: 0.15, y: 0.2, color: [255, 69, 0] },     // OrangeRed top-left
+    { x: 0.85, y: 0.5, color: [255, 140, 0] },     // DarkOrange right
+    { x: 0.5, y: 0.85, color: [255, 107, 53] },    // mid-bottom
+  ];
+
+  function resize() {
+    W = canvas.width = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  // ── Particle class ──
+  class Particle {
+    constructor() {
+      this.reset(true);
+    }
+    reset(initial) {
+      this.x = Math.random() * W;
+      this.y = Math.random() * H;
+      this.r = 1 + Math.random() * 2.5;            // base radius
+      this.vx = (Math.random() - 0.5) * 0.3;       // Brownian drift
+      this.vy = (Math.random() - 0.5) * 0.3 - 0.05; // slight upward
+      this.life = 0;
+      this.maxLife = 600 + Math.random() * 800;
+      this.baseAlpha = 0.15 + Math.random() * 0.35;
+      this.phase = Math.random() * Math.PI * 2;     // twinkle offset
+    }
+  }
+
+  // Seed particles
+  for (let i = 0; i < PARTICLE_COUNT; i++) particles.push(new Particle());
+
+  // ── Light scattering intensity for one particle from one light ──
+  function scatter(p, light) {
+    const lx = light.x * W, ly = light.y * H;
+    const dx = p.x - lx, dy = p.y - ly;
+    const dist = Math.sqrt(dx * dx + dy * dy) + 1;
+    // Mie-like forward glow: stronger when closer
+    return Math.min(1, 400 / dist);
+  }
+
+  // ── Coagulation: merge close-by small particles ──
+  function coagulate() {
+    for (let i = 0; i < particles.length; i++) {
+      const a = particles[i];
+      for (let j = i + 1; j < particles.length; j++) {
+        const b = particles[j];
+        const dx = a.x - b.x, dy = a.y - b.y;
+        const gap = Math.sqrt(dx * dx + dy * dy);
+        if (gap < a.r + b.r + 2) {
+          // Merge b into a (conservation of area)
+          const newR = Math.sqrt(a.r * a.r + b.r * b.r);
+          if (newR < 6) { // cap max size
+            a.r = newR;
+            a.vx = (a.vx + b.vx) * 0.5;
+            a.vy = (a.vy + b.vy) * 0.5;
+            b.reset(false); // respawn b as a new tiny particle
+          }
+        }
+      }
+    }
+  }
+
+  let frame = 0;
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+    frame++;
+
+    // Coagulate every 4 frames (perf)
+    if (frame % 4 === 0) coagulate();
+
+    for (const p of particles) {
+      p.life++;
+      if (p.life > p.maxLife) p.reset(false);
+
+      // Brownian jitter
+      p.vx += (Math.random() - 0.5) * 0.04;
+      p.vy += (Math.random() - 0.5) * 0.04;
+      p.x += p.vx;
+      p.y += p.vy;
+
+      // Wrap around
+      if (p.x < -10) p.x = W + 10;
+      if (p.x > W + 10) p.x = -10;
+      if (p.y < -10) p.y = H + 10;
+      if (p.y > H + 10) p.y = -10;
+
+      // Fade in / out
+      const lifeFrac = p.life / p.maxLife;
+      let alpha = p.baseAlpha;
+      if (lifeFrac < 0.1) alpha *= lifeFrac / 0.1;
+      else if (lifeFrac > 0.85) alpha *= (1 - lifeFrac) / 0.15;
+
+      // Twinkle
+      alpha *= 0.7 + 0.3 * Math.sin(p.phase + frame * 0.015);
+
+      // Accumulate light colour from all sources
+      let rC = 255, gC = 255, bC = 255;  // start neutral
+      let totalScatter = 0;
+      for (const ls of LIGHT_SOURCES) {
+        const s = scatter(p, ls);
+        totalScatter += s;
+        rC += ls.color[0] * s;
+        gC += ls.color[1] * s;
+        bC += ls.color[2] * s;
+      }
+      // Normalise
+      const norm = 1 + totalScatter;
+      rC = Math.min(255, rC / norm);
+      gC = Math.min(255, gC / norm);
+      bC = Math.min(255, bC / norm);
+
+      // Draw glow
+      const glowR = p.r * (2.5 + totalScatter * 1.5);
+      const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, glowR);
+      grad.addColorStop(0, `rgba(${Math.round(rC)},${Math.round(gC)},${Math.round(bC)},${(alpha * 0.6).toFixed(3)})`);
+      grad.addColorStop(0.4, `rgba(${Math.round(rC)},${Math.round(gC)},${Math.round(bC)},${(alpha * 0.15).toFixed(3)})`);
+      grad.addColorStop(1, 'rgba(0,0,0,0)');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, glowR, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Draw core
+      ctx.fillStyle = `rgba(${Math.round(rC)},${Math.round(gC)},${Math.round(bC)},${alpha.toFixed(3)})`;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ─── Navbar scroll effect ───
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ─── Hamburger toggle ───
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
+// Close menu on link click
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('active'));
+});
+
+// ─── Scroll-reveal observer ───
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ─── Form handler (placeholder) ───
+function handleSubmit(e) {
+  e.preventDefault();
+  alert('Thank you for your message! I will get back to you soon.');
+  e.target.reset();
+}
+</script>
+
+</body>
+</html>
