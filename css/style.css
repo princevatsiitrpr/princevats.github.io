@@ -93,14 +93,22 @@ a:hover {
 }
 
 .nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  font-weight: 700;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 4px; /* Slight rounding for a square image */
+  transition: var(--transition-fast);
+}
+
+.nav-logo:hover img {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow);
 }
 
 .nav-links {
