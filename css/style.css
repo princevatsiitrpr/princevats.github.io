@@ -1307,15 +1307,15 @@ section {
   min-width: 80px;
   padding: 0.85rem;
   border-radius: var(--radius-sm);
-  background: var(--accent-soft-glow);
-  border: 1.5px solid var(--border-accent);
+  background: var(--event-bg, var(--accent-soft-glow));
+  border: 1.5px solid var(--event-border, var(--border-accent));
   transition: var(--transition-smooth);
 }
 
 .event-date .year {
   font-size: 1.4rem;
   font-weight: 700;
-  background: var(--accent-gradient);
+  background: var(--event-grad, var(--accent-gradient));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -1338,28 +1338,6 @@ section {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.6;
-}
-
-/* Custom Year Event Colors */
-.event-date.year-2025 {
-  background: rgba(147, 51, 234, 0.1);
-  border-color: rgba(147, 51, 234, 0.3);
-}
-.event-date.year-2025 .year {
-  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.event-date.year-2023 {
-  background: rgba(16, 185, 129, 0.1);
-  border-color: rgba(16, 185, 129, 0.3);
-}
-.event-date.year-2023 .year {
-  background: linear-gradient(135deg, #10b981 0%, #2dd4bf 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 /* ===== Filter Controls ===== */

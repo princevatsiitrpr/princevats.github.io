@@ -6,6 +6,34 @@
   <title>Conferences - Prince Vats</title>
   <link rel="icon" type="image/png" href="../assets/images/PV_logo.png" />
   <link rel="stylesheet" href="../css/style.css?v=3" />
+  <style>
+    /* Custom Year Event Colors */
+    .event-date.year-2027 {
+      --event-bg: rgba(245, 158, 11, 0.1); /* Example: Orange theme */
+      --event-border: rgba(245, 158, 11, 0.3);
+      --event-grad: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    }
+    .event-date.year-2026 {
+      --event-bg: rgba(59, 130, 246, 0.1); /* Example: Blue theme */
+      --event-border: rgba(59, 130, 246, 0.3);
+      --event-grad: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+    }
+    .event-date.year-2025 {
+      --event-bg: rgba(147, 51, 234, 0.1);
+      --event-border: rgba(147, 51, 234, 0.3);
+      --event-grad: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    }
+    .event-date.year-2024 {
+      --event-bg: rgba(236, 72, 153, 0.1); /* Example: Pink theme */
+      --event-border: rgba(236, 72, 153, 0.3);
+      --event-grad: linear-gradient(135deg, #ec4899 0%, #f43f5e 100%);
+    }
+    .event-date.year-2023 {
+      --event-bg: rgba(16, 185, 129, 0.1);
+      --event-border: rgba(16, 185, 129, 0.3);
+      --event-grad: linear-gradient(135deg, #10b981 0%, #2dd4bf 100%);
+    }
+  </style>
 </head>
 <body>
 
@@ -54,12 +82,26 @@
     <!-- Year Filters -->
     <div class="filter-controls" id="eventFilters">
       <button class="btn btn-primary filter-btn active" data-filter="all">All</button>
+      <button class="btn btn-outline filter-btn" data-filter="2026">2026</button>
       <button class="btn btn-outline filter-btn" data-filter="2025">2025</button>
       <button class="btn btn-outline filter-btn" data-filter="2023">2023</button>
     </div>
 
     <div class="event-list" id="eventList">
       
+      <!-- Event -->
+      <div class="event-item filterable-item" data-year="2026">
+        <div class="event-date year-2026">
+          <span class="label">Feb</span>
+          <span class="year">2026</span>
+        </div>
+        <div class="event-content">
+          <h3>Symposium on Promoting Aerosol Education and Research</h3>
+          <p>Organized by IIT Gandhinagar.</p>
+          <span class="event-tag">Participant</span>
+        </div>
+      </div>
+
       <!-- Event -->
       <div class="event-item filterable-item" data-year="2025">
         <div class="event-date year-2025">
@@ -68,7 +110,7 @@
         </div>
         <div class="event-content">
           <h3>Symposium on Advances in Tools and Technologies to Quantify Health Impacts of Air Pollution</h3>
-          <p>IIT Gandhinagar.</p>
+          <p>Organized by IIT Gandhinagar.</p>
           <span class="event-tag">Participant</span>
         </div>
       </div>
@@ -82,8 +124,8 @@
         <div class="event-content">
           <h3>Asian Aerosol Conference (AAC 2025)</h3>
           <p>Organized by IASTA, Mumbai.</p>
-          <a href="../assets/pdf/AAC_2025_Oral.pdf" target="_blank" rel="noopener"><span class="event-tag">PDF of the Oral Presentation</span></a>
-          <a href="../assets/pdf/AAC_2025_Poster.pdf" target="_blank" rel="noopener"><span class="event-tag">PDF of the Poster Presentation</span></a>
+          <a href="../assets/pdf/AAC_2025_Oral.pdf" target="_blank" rel="noopener"><span class="event-tag">View Oral Presentation (PDF)</span></a>
+          <a href="../assets/pdf/AAC_2025_Poster.pdf" target="_blank" rel="noopener"><span class="event-tag">View Poster (PDF)</span></a>
         </div>
       </div>
 
@@ -96,7 +138,8 @@
         <div class="event-content">
           <h3>India Clean Air Summit 2025</h3>
           <p>Organized by CSTEP, Bengaluru.</p>
-          <span class="event-tag">2 Poster Presentations</span>
+          <a href="../assets/pdf/ICAS_2025_Poster_1.pdf" target="_blank" rel="noopener"><span class="event-tag">View Poster 1 (PDF)</span></a>
+          <a href="../assets/pdf/ICAS_2025_Poster_2.pdf" target="_blank" rel="noopener"><span class="event-tag">View Poster 2 (PDF)</span></a>
         </div>
       </div>
 
@@ -108,7 +151,7 @@
         </div>
         <div class="event-content">
           <h3>Smart Sensors and Data Analytics for Air Quality Management Workshop</h3>
-          <p>IIT Bombay.</p>
+          <p>Organized by IIT Bombay.</p>
           <span class="event-tag">Participant</span>
         </div>
       </div>
@@ -121,9 +164,8 @@
         </div>
         <div class="event-content">
           <h3>International Conference on Advances in Air Quality Management (IICAQM 2023)</h3>
-          <p>IISc, Bengaluru.</p>
+          <p>Organized by IISc, Bengaluru.</p>
           <a href="https://doi.org/10.1007/978-981-96-2359-4_18"><span class="event-tag">https://doi.org/10.1007/978-981-96-2359-4_18</span></a>
-          <span class="event-tag">1 Paper Presentation</span>
         </div>
       </div>
 
@@ -135,7 +177,7 @@
         </div>
         <div class="event-content">
           <h3>AI4Water: Advanced Data-Driven and Artificial Intelligence Tools in Water Resources Workshop</h3>
-          <p>IIT Roorkee.</p>
+          <p>Organized by IIT Roorkee.</p>
           <span class="event-tag">Participant</span>
         </div>
       </div>
@@ -148,7 +190,7 @@
         </div>
         <div class="event-content">
           <h3>7th National Water Seminar</h3>
-          <p>National Institute of Hydrology, Roorkee.</p>
+          <p>Organized by National Institute of Hydrology, Roorkee.</p>
           <span class="event-tag">2 Paper Presentations</span>
           <span class="event-tag" style="background:rgba(52, 211, 153, 0.15);color:#34d399;margin-left:5px;">🏆 Best Paper Award</span>
         </div>
